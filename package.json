@@ -18,8 +18,8 @@
     "lint:fix": "npm run lint -- --fix",
     "db:create": "tsx --env-file=.env ./scripts/create-database.ts",
     "db:drop": "tsx --env-file=.env ./scripts/drop-database.ts",
-    "db:migrate": "tsx --env-file=.env ./scripts/migrate.ts",
-    "db:seed": "tsx --env-file=.env ./scripts/seed-database.ts"
+    "db:migrate": "tsx --env-file-if-exists=.env ./scripts/migrate.ts",
+    "db:seed": "tsx --env-file-if-exists=.env ./scripts/seed-database.ts"
   },
   "keywords": [
     "fastify",
